@@ -384,7 +384,7 @@
     document.querySelectorAll('img:not([src^="assets/"])').forEach((img) => {
       img.addEventListener('error', () => {
         img.onerror = null;
-        img.src = 'assets/bstu-logo.jpeg';
+        img.src = 'assets/bstu-logo.png';
         img.classList.add('bg-navy-900', 'p-8', 'object-contain');
         img.alt = img.alt || 'BSTU Travel Agency';
       }, { once: true });
